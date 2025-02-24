@@ -24,25 +24,25 @@
 		xxsmall: [null, '360px']
 	});
 
-	$window.on('load', function () {
-		Particles.
-			init
-			({
-				selector: '.background',
-				maxParticles: 200,
-				color: ['#2dd2fd', '#2dfd61'],
-				speed: 0.7,
-				connectParticles: true,
-				responsive: [{
-					breakpoint: 40,
-					options: {
-						color: '#00C9B1',
-						maxParticles: 50,
-						connectParticles: false
-					}
-				}]
-			});
-	})
+	// $window.on('load', function () {
+	// 	Particles.
+	// 		init
+	// 		({
+	// 			selector: '.background',
+	// 			maxParticles: 200,
+	// 			color: ['#2dd2fd', '#2dfd61'],
+	// 			speed: 0.7,
+	// 			connectParticles: true,
+	// 			responsive: [{
+	// 				breakpoint: 40,
+	// 				options: {
+	// 					color: '#00C9B1',
+	// 					maxParticles: 50,
+	// 					connectParticles: false
+	// 				}
+	// 			}]
+	// 		});
+	// })
 
 	// Play initial animations on page load.
 	$window.on('load', function () {
