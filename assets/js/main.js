@@ -35,15 +35,15 @@
 			init
 			({
 				selector: '.particles',
-				maxParticles: 200,
 				color: ['#2dd2fd', '#2dfd61'],
 				speed: 0.7,
 				connectParticles: true,
+				maxParticles: 70,
 				responsive: [{
 					breakpoint: 40,
 					options: {
 						color: '#00C9B1',
-						maxParticles: 50,
+						maxParticles: 1,
 						connectParticles: false
 					}
 				}]
