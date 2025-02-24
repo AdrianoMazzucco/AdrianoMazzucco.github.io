@@ -1730,7 +1730,7 @@ body.is-preload #footer {
 .particles {
 
 	position:
-		absolute;
+		fixed;
 
 	display:
 		block;
