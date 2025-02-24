@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Editorial by HTML5 UP
+	Dimension by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
@@ -10,119 +10,605 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
 
+				<!-- Header -->
+					<header id="header">
+						<!-- <div class="logo">
+							<span class="fa fa-gamepad"></span>
+						</div> -->
+						<div class="content">
+							<div class="inner">
+								<h1>Adriano Mazzucco</h1>
+								<p>Software Engineer<br />
+								Game Developer</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#unity">Unity</a></li>
+								<li><a href="#cPlusPlus">C++</a></li>
+								<li><a href="#Resume">Resume</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
 				<!-- Main -->
 					<div id="main">
-						<div class="inner">
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Home</strong> </a>
-									<ul class="icons">
-										<li><a href="https://github.com/AdrianoMazzucco" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="https://www.linkedin.com/in/adriano-mazzucco-b69b56b2/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									</ul>
+						<!-- Unity -->
+							<article id="unity">
+								<!-- <h2 class="major">Unity Projects</h2> -->
+								<!-- <span class="image main"><img src="images/pic01.jpg" alt="" /></span> -->
+
+								<!-- Big vs Them all -->
+								<section>
+									<header class="main">
+										<h1 class="major">The Big VS Them All</h1>
+									</header>
+
+									<p>The goal of this project was to create an online asymmetrical PVP game where one player controls a MOBA style kaiju 
+										and the other controls an RTS style army. I completed this project with a 6 person team.  My main role was gameplay and AI 
+										programming for this project. I opted to implement the Mixin design pattern to create an easy to use, data driven system 
+										for modularity. I then created a custom interface to allow designers to create and modify gameplay features without needing 
+										to modify the code.								
+
+										Download the game <a href="https://always-snacking-studios.itch.io/the-big-vs-them-all">Here</a></p>	
+
+									</p>
+																												
+									<iframe  STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/oiP0o2_33ZM" title="The BIG vs Them All Official Gameplay Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="BVAll"></iframe>
+
+								</section>
+
+								<!-- driving game-->
+								<section>
+									<header class="main">
+										<h1 class="major">Racing Game</h1>
+									</header>
+
+									<p> This networked racing game has a team of 3 players competing against AI cars. Player 1 Controllers the car using a steering wheel, player 2 has a top-down view and drops
+										power-ups, and player 3 uses a VR headset to ride on top and shoot at targets. I completed this project with two other classmates. For this project I created a tool to 
+										generate the road mesh using a catmull rom spline. I also created the car controller used by the player and AI drivers. Finally I also impleted steering behaviours to create
+										three drivers each with their own unique driving style. 
+									</p>
+									<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/1gSvDl_4V2I" title="3 player Racing Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								</section>
+
+							<!-- Graceful Tree Game -->
+								<section>
+									<header class="main">
+										<h1 class="major">Graceful Tree Game</h1>
+									</header>
+
+									<p> This is the game I made in Unity using C# based on the graceful tree math conjecture. In the game players must fill the tree nodes with numbers in a 
+										way that all differences are unique. The game has a time trial in which when you run out of time you lose. It also has a casual game mode, where you 
+										cannot lose, and can determine if you want the difficulty to increase or decrease. 
+										You can find the game on Google Play  
+										<a href="https://play.google.com/store/apps/details?id=com.Sonmazz.GracefulTreeGame" class="icon brands fa-google"><span class="label">Google</span></a>
+
+									</p>
+
+									<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/j8NREIAcAF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								</section>
+								<!-- Driving Game -->
+								<section>
+									<header class="main">
+										<h1 class="major">Downhill Drift</h1>
+									</header>
+
+									<p> This project started with me trying to learn procedural mesh generation in Unity with C#. I was able to create a potentailly "infinite" road by shifting the mesh as the car drove. 
+										Once the mesh generation was working as intended I started add more features to the game. Player options like vibration and rear view mirrors are saved with playerprefs.
+										Current vehicle and unlocked cars are saved in a binary file. This demo video is the game in its current state. All models were made by me in Blender.
+										I am hoping to release it as a mobile game once everything is completed.
+									</p>
+
+									<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/0vg_RloigGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+								</section>
+
+								<!-- Pacman AI
+								<section>
+									<header class="main">
+										<h1 class="major">Pacman Ghost AI</h1>
+									</header>
+
+									<p> The was a school project at Sheridan. Our professor provided us with a project that was missing all ghost AI. For this I used finite state machines for the ghosts to use to determine there actions.
+										The unity Animator window was used as a visual tool to display and alter the Finite State Machine for each ghost. Ghost AI is based on the original Pacman AI. Below is a video which displays the Game 
+										as well as one of the Ghosts Finite State Machines as it changes states. 
+									</p>
+									<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/B5rCbSPLTzI" title="Pacman AI made with Finite State Machine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+								</section> -->
+
+
+								<!-- minimax -->
+								<section>
+									<header class="main">
+										<h1 class="major">MiniMax AI</h1>
+									</header>
+
+									<p> I have a great interest in video game AI. So, I decided to implement my own MiniMax algorithm for some simple board games. The two game AI I decided to create were Tic-Tac-Toe and connect four.
+										The Tic-Tac-Toe algorithm is working as intended all games result in a tie or the computer winning.In Tic-Tac-Toe the player is always "X". The connect four however there is still a chance to beat the computer. The connect four algorithm is still 
+										a work in progress. In connect four the player is always yellow. I hope to continue updating it until I can make it unbeatable.
+									</p>
+
+									<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/lhXImfML97w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/ZCmoDRtJKkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								</section>
+
+								<!-- ShootOut Clone -->
+								<section>
+									<header class="main">
+										<h1 class="major">Arcade Shooter Clone</h1>
+									</header>
+
+									<p> This was a school project where we were tasked with creating an arcade inspired shooter in unity. I got all animations from Mixamo. Root Motion was used to move all game characters. 
+									</p>
+
+									<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/ceBeqX1U6yQ" title="ShootOut Clone made in Unity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+								</section>
+
+								<!-- Pathfinding -->
+								<section>
+									<header class="main">
+										<h1 class="major">A* Pathfinding</h1>
+									</header>
+
+									
+
+									<p>The purpose of this project was to impliment the A* pathfinding algorithm in Unity using C#. The A* pathfinding algorithm is an extension of Dijkstra's algorithm. It works by factoring in a "cost" while finding the shortest path.
+										This cost is determined by two factors. The first is the G cost which is based on the distance from the starting node. The second cost is the H cost, which is a heuristic value from the node to the end point. The algorithm than 
+										goes through each node with the lowest overall cost to determine links from node to node. Once the end goal is reached a path is then traced back based on links to previous nodes. Check out the code here :
+										<a href="https://github.com/Adriano-Mazzucco/Unity-pathfinding" class="icon brands fa-github"><span class="label">Github</span></a>
+									</p>
+									
+									
+									<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/PuAd6sS3Bi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								</section>
+
+								<!-- Netowrk
+								<section>
+									<header class="main">
+										<h1 class="major">UDP - Server-client Game</h1>
+									</header>
+
+									<p>This project was a school project where we were tasked with creating a network game by using .NET udp sockets. For my game I decided to keep gameplay simple and focus on the networking aspects. 
+										The game works with a dedicated server starting and game and clientss then join to play. The server has control over everything in the game, clients just send messages to the Server.
+										Below is a video in which I explain how all the networking was setup and a short gameplay demonstration. 
+									</p>
+									
+									<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/gImtLwzAhIw" title="Simple Network Game, UDP, server-client, made in Unity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+								</section> -->
+
+								<!-- IK -->
+								<!-- <section>
+									<header class="main">
+										<h1 class="major">Inverse Kinematics</h1>
+									</header>
+
+									<p>Since I have an interest in both animation as well as programming, I wanted to learn procedural animation. This first step towards this was learning and implimenting an inverse kinematics tool.
+										Inverse Kinematics works opposite to forward kinematics, instead of working the start joint to the end joint it works from end bone to start. The result is more natural moving limbs in animations.
+										My script works by going through bone by bone and rotating it first towards a target location, than towards a preset pole. This script could than be used on limbs of any length. This allowed me to 
+										create creatures with any number of limbs and joints. Since it is moving towards a target and not using a premade animation this allows for accurate placement. With this I was able to create animation
+										that could traverse uneven terrain or stairs and not clip through or float above resulting in more natural movement. Check out the Videos below to see some examples. I plan to use this in the future
+										to add even more movement to my future projects. Heads looking in specific directions, arms grabbing things, and dodging obstacles are just some of the ways this system can be used. Check out the code here :
+										<a href="https://github.com/Adriano-Mazzucco/InverseKinematics/blob/main/IKscript.cs" class="icon brands fa-github"><span class="label">Github</span></a>
+									</p>
+
+									<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/pcxAra4bb9A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/6Vfainq8mD8" title="Procedural Gecko Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+									<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/KLYC1ftFfu4" title="Procedural Animated Robot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</section> -->
+
+								<!-- Conways
+								<section>
+									<header class="main">
+										<h1 class="major">Conway's Game of Life Clone</h1>
+									</header>
+
+									<p> This zero-player game has a set of rules that determines how cells are created and destroyed. Any Cell with less than 2 neighbours dies, due to underpopulation.
+										Any cell with more than 3 neighbours dies. Any cells with exactly 2 or 3 neighbours lives. Any dead cell with 3 live neighbours comes back. These 4 rules cause interesting 
+										interactions and patterns amoung the cells. There are multiple infinite patterns that can occur during the game. For my implementation the live cells are chosen randomly at the start 
+										then the simulation. Below is a video demonstration of my implementation of Conway's Game of Life.
+									</p>
+									
+									<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/4EYaw-1cfQo" title="Conway&#39;s Game of Life Clone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+								</section> -->
+
+							</article>
+
+						<!-- C++ -->
+							<article id="cPlusPlus">
+								<!-- <h2 class="major">Work</h2> -->
+								<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
+								
+								
+							<!-- Content -->
+							<section>
+								<header class="main">
+									<h1 class="major">2nd Place Ubisoft NEXT</h1>
+									<h1 class="major">2023 Programming</h1>
 								</header>
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Adriano Mazzucco<br />
-											</h1>
-										</header>
-										<p>I am a computer engineer looking to get a start in the software development and gaming industry. I recently recieved 2nd place in the Ubisoft NEXT 2023 programming competition.
-											My capstone team at Sheridan recently completed our RTS/MOBA Asymetrical PVP game "The Big VS Them All". In my portfolio you will find my resume, along with multiple examples of my projects.
-											
-											Feel free to reach out to me at adrianommazzucco@gmail.com or you can contact me through LinkedIn. 
-										</p>
-										<p>-Adriano</p>
-										
-									</div>
-									<!--<span class="image object">
-										<img src="images/adriano.jpg" alt="" />
-									</span>-->
-								</section>
-								
+								<p>In 2023 I won second place in the Ubisoft NEXT 2023 programming competition. For this competition Ubisoft I had one weekend to make a game, I was also provided a simple 2D graphics API and a month to prepare.
+									During that month I implemented an Entity Component System architecture for my game engine. I also implemented a math library to use the 2D API to create a 3D engine. I was then able to create a two player
+									3D Bomber-man game with a dynamic camera. Below is a video of the game where I describe the systems I implemented to create it. 
 
-							<!-- Section -->
-								<section>
-									<ul>
-										<li><a href="Resume.html">Resume</a></li>
-										<li><a href="secondPlaceUbisoft.html">2nd Place Ubisoft Next</a></li>
-										<li><a href="bigVSall.html">The Big VS Them all</a></li>
-										<li><a href="powerflow.html">Power FLow Tool</a></li>
-										<li><a href="unityProjects.html">Unity Games</a></li>
-										<li><a href="smallUnityProject.html">Unity learning Projects</a></li>
-										<li><a href="CPPprojects.html">C++ projects</a></li>
+									Check Out the Winners of the Competition <a href="https://toronto.ubisoft.com/ubisoft-toronto-next-2023-winners-celebrating-10-years-of-supporting-student-talent-in-ontario/">Here</a></p>	
 
-									</ul>
-									
-								</section>
 
-						</div>
-					</div>
-
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-
+								</p>
+																											
+								<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/_4HuImxOILE" title="Ubisoft Next 2023 Programming Submission Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 							
+							</section>
+
+							<!-- Asteroids Clone -->
+							<section>
+								<header class="main">
+									<h1 class="major">Asteroids Clone</h1>
+								</header>
+
+								<p> This was a school project to make a Asteroids clone using C++ and SFML. A demo video of my project can be found below. The game is Data-driven with all stats for player, enemies and asteroids 
+									being stored in JSON files. JSON files were also used to save game data, such as high score and using the game button '~' with the load button 'L'.
+
+								</p>
+
+								<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/8esiMCmaRpc" title="Asteroids Clone in SFML" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+							</section>
+
+							<!-- Next 2025 -->
+							<section>
+								<header class="main">
+									<h1 class="major">Ubisoft Next 2025</h1>
+									<h1 class="major">Submission</h1>
+								</header>
+
+								<p> In 2025 I competed in the Ubisoft NEXT competition with the challenge of Mini-golf game. I prepared a ECS engine with object pooling to attempt to optimize 
+									cache usage with updating components. In this game two rivals are sharing one golf ball. The goal was to try and create a Mini-golf game with competitive twist
+									forcing the players to really plan out there turns.
+
+								</p>
+
+								<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/rNzrJhaYaFI" title="Mini-golf  NEXT 2025 Submission" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+							</section>
+
+							<!-- Next 2021 -->
+							<section>
+								<header class="main">
+									<h1 class="major">Ubisoft Next 2021</h1>
+									<h1 class="major">Submissions</h1>
+								</header>
+
+								<p> In 2021 I competed in the Ubisoft NEXT competition with the challenge of creating a tower defense game. For this project I decided to use Boids flocking algorithm to simulate
+									natural movement of the enemies. I also implemented a simple IK snake to block enemies. There were multiple types of towers for the player to purchase as well as multiple types 
+									of enemies that were resistant to certain towers. 
+
+								</p>
+
+								<iframe STYLE="width:100%;height:400px" src="https://www.youtube.com/embed/8y_o0izVNcg" title="TheSwormDemo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+							</section>
+							</article>
+
+						<!-- Resume -->
+							<article id="Resume">
+								<h2 class="major">Resume</h2>
+								<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
 								
+								<a href="images/AdrianoMazzuccoResume.pdf">Click Here to Download Resume</a><br><br>
+								<embed src="images/AdrianoMazzuccoResume.pdf" STYLE="width:100%;height:800px">
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">About Me</a></li>
-										<li><a href="Resume.html">Resume</a></li>
-										<li><a href="secondPlaceUbisoft.html">2nd Place Ubisoft Next</a></li>
-										<li><a href="bigVSall.html">The Big VS Them all</a></li>
-										<li><a href="powerflow.html">Power FLow Tool</a></li>
-										<li><a href="unityProjects.html">Unity Games</a></li>
-										<li><a href="smallUnityProject.html">Unity learning Projects</a></li>
-										<li><a href="CPPprojects.html">C++ projects</a></li>
+							</article>
 
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="https://formspree.io/f/xovjbbln">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
 									</ul>
-								</nav>
-								
-							<!-- Section -->
+								</form>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/adriano-mazzucco-b69b56b2/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+									<!-- <li><a href="https://github.com/AdrianoMazzucco" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
+								</ul>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
 								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p></p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">adrianommazzucco@gmail.com</a></li>
-										<li><a href="https://github.com/AdrianoMazzucco" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="https://www.linkedin.com/in/adriano-mazzucco-b69b56b2/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
 									</ul>
 								</section>
 
-							<!-- Footer -->
-								<footer id="footer">
-								
-								</footer>
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
 
-						</div>
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
 					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
 
 			</div>
-
+			
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			
+			<!-- BG -->
+			<div id="bg"></div>
+			<canvas class="background"></canvas>
+			<script src="node_modules\particlesjs\dist\particles.min.js"></script>
+			
 	</body>
 </html>
