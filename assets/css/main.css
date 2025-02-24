@@ -1720,15 +1720,14 @@ body.is-preload #footer {
 
 
 /*Pixels*/
-html,
-body {
+/* html, body {
 
 	margin: 0;
 
 	padding: 0;
-}
+} */
 
-.background {
+.particles {
 
 	position:
 		absolute;
